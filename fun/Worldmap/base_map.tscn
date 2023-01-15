@@ -1,0 +1,110 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://close_button.gd" type="Script" id=1]
+[ext_resource path="res://Font/li.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://resource/aaa.tres" type="Theme" id=3]
+[ext_resource path="res://fun/Worldmap/base_map.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_size = 3
+outline_color = Color( 0.180392, 0.180392, 0.180392, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+outline_size = 3
+outline_color = Color( 0.180392, 0.180392, 0.180392, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+outline_size = 3
+outline_color = Color( 0.180392, 0.180392, 0.180392, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+outline_size = 3
+outline_color = Color( 0.180392, 0.180392, 0.180392, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="Panel"]
+margin_left = 352.0
+margin_top = 48.0
+margin_right = 704.0
+margin_bottom = 128.0
+custom_fonts/font = SubResource( 1 )
+text = "魂阴海"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="Panel"]
+margin_left = 360.0
+margin_top = 128.0
+margin_right = 712.0
+margin_bottom = 184.0
+custom_fonts/font = SubResource( 2 )
+text = "进入此界需出示魂阴令"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="Panel"]
+margin_right = 120.0
+margin_bottom = 72.0
+theme = ExtResource( 3 )
+text = "close"
+script = ExtResource( 1 )
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 120.0
+margin_top = 248.0
+margin_right = 952.0
+margin_bottom = 520.0
+
+[node name="Label" type="Label" parent="Panel2"]
+margin_right = 104.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 3 )
+text = "当前区域城镇数"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="Panel2"]
+margin_left = 560.0
+margin_right = 720.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 3 )
+text = "当前区域凡人数"
+align = 1
+valign = 1
+
+[node name="Label2" type="RichTextLabel" parent="Panel2"]
+margin_left = 240.0
+margin_top = 8.0
+margin_right = 528.0
+margin_bottom = 48.0
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "[center][color=#DC143C]当前域主[/color][/center]"
+text = "当前域主"
+fit_content_height = true
+
+[node name="grid" type="GridContainer" parent="Panel2"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+columns = 5
+
+[connection signal="button_down" from="Panel/Button" to="Panel/Button" method="_on_Button_button_down"]

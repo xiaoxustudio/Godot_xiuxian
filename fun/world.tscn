@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://resource/aaa.tres" type="Theme" id=1]
+[ext_resource path="res://font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://fun/world.gd" type="Script" id=3]
+[ext_resource path="res://resource/map.png" type="Texture" id=4]
+[ext_resource path="res://turns.gd" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 70.9784, 34.9295 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 58.1574, 39.2957 )
+
+[node name="world" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 3 )
+
+[node name="base" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="Sprite" type="Sprite" parent="base"]
+position = Vector2( 511.906, 299.906 )
+scale = Vector2( 0.645361, 0.53445 )
+texture = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="base/Sprite"]
+margin_left = -793.209
+margin_top = -426.431
+margin_right = -721.209
+margin_bottom = -370.431
+theme = ExtResource( 1 )
+custom_fonts/font = ExtResource( 2 )
+text = "Close"
+
+[node name="turns" type="Area2D" parent="base/Sprite"]
+position = Vector2( -532.889, -351.588 )
+script = ExtResource( 5 )
+Sence = "res://fun/Worldmap/base_map.tscn"
+data_map = [ "魂阴海" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="base/Sprite/turns"]
+position = Vector2( 3.39856, 1.52588e-05 )
+shape = SubResource( 1 )
+
+[node name="turns2" type="Area2D" parent="base/Sprite"]
+position = Vector2( -74.2313, -351.588 )
+script = ExtResource( 5 )
+Sence = "res://fun/Worldmap/base_map.tscn"
+data_map = [ "青玉" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="base/Sprite/turns2"]
+position = Vector2( 3.8233, 5.61034 )
+shape = SubResource( 2 )
+
+[connection signal="button_down" from="base/Sprite/Button" to="." method="_on_Button_button_down"]

@@ -1,0 +1,399 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Game.gd" type="Script" id=2]
+[ext_resource path="res://resource/aaa.tres" type="Theme" id=3]
+[ext_resource path="res://resource/back_ground_1.png" type="Texture" id=4]
+[ext_resource path="res://Font/li.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="Theme" id=1]
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+CheckBox/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+CheckBox/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+CheckBox/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+CheckBox/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+CheckBox/colors/font_color_hover_pressed = Color( 1, 1, 1, 1 )
+CheckBox/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+CheckButton/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+CheckButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+CheckButton/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+CheckButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+CheckButton/colors/font_color_hover_pressed = Color( 1, 1, 1, 1 )
+CheckButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+ColorPickerButton/colors/font_color = Color( 1, 1, 1, 1 )
+ColorPickerButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.3 )
+ColorPickerButton/colors/font_color_focus = Color( 1, 1, 1, 1 )
+ColorPickerButton/colors/font_color_hover = Color( 1, 1, 1, 1 )
+ColorPickerButton/colors/font_color_pressed = Color( 0.8, 0.8, 0.8, 1 )
+FileDialog/colors/file_icon_modulate = Color( 1, 1, 1, 1 )
+FileDialog/colors/files_disabled = Color( 0, 0, 0, 0.7 )
+FileDialog/colors/folder_icon_modulate = Color( 1, 1, 1, 1 )
+GraphEdit/colors/activity = Color( 1, 1, 1, 1 )
+GraphEdit/colors/grid_major = Color( 1, 1, 1, 0.2 )
+GraphEdit/colors/grid_minor = Color( 1, 1, 1, 0.05 )
+GraphEdit/colors/selection_fill = Color( 1, 1, 1, 0.3 )
+GraphEdit/colors/selection_stroke = Color( 1, 1, 1, 0.8 )
+GraphEditMinimap/colors/resizer_color = Color( 1, 1, 1, 0.85 )
+GraphNode/colors/close_color = Color( 0, 0, 0, 1 )
+GraphNode/colors/resizer_color = Color( 0, 0, 0, 1 )
+GraphNode/colors/title_color = Color( 0, 0, 0, 1 )
+ItemList/colors/font_color = Color( 0.63, 0.63, 0.63, 1 )
+ItemList/colors/font_color_selected = Color( 1, 1, 1, 1 )
+ItemList/colors/guide_color = Color( 0, 0, 0, 0.1 )
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+LineEdit/colors/clear_button_color = Color( 0.88, 0.88, 0.88, 1 )
+LineEdit/colors/clear_button_color_pressed = Color( 1, 1, 1, 1 )
+LineEdit/colors/cursor_color = Color( 0.94, 0.94, 0.94, 1 )
+LineEdit/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+LineEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
+LineEdit/colors/font_color_uneditable = Color( 0.88, 0.88, 0.88, 0.5 )
+LineEdit/colors/selection_color = Color( 0.49, 0.49, 0.49, 1 )
+LinkButton/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+LinkButton/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+LinkButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+LinkButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+MenuButton/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+MenuButton/colors/font_color_disabled = Color( 1, 1, 1, 0.3 )
+MenuButton/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+MenuButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+MenuButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+PopupMenu/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+PopupMenu/colors/font_color_accel = Color( 0.7, 0.7, 0.7, 0.8 )
+PopupMenu/colors/font_color_disabled = Color( 0.4, 0.4, 0.4, 0.8 )
+PopupMenu/colors/font_color_hover = Color( 0.88, 0.88, 0.88, 1 )
+PopupMenu/colors/font_color_separator = Color( 0.88, 0.88, 0.88, 1 )
+ProgressBar/colors/font_color = Color( 0.94, 0.94, 0.94, 1 )
+ProgressBar/colors/font_color_shadow = Color( 0, 0, 0, 1 )
+RichTextLabel/colors/default_color = Color( 1, 1, 1, 1 )
+RichTextLabel/colors/font_color_selected = Color( 0.49, 0.49, 0.49, 1 )
+RichTextLabel/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+RichTextLabel/colors/selection_color = Color( 0.1, 0.1, 1, 0.8 )
+TabContainer/colors/font_color_bg = Color( 0.69, 0.69, 0.69, 1 )
+TabContainer/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+TabContainer/colors/font_color_fg = Color( 0.94, 0.94, 0.94, 1 )
+Tabs/colors/font_color_bg = Color( 0.69, 0.69, 0.69, 1 )
+Tabs/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Tabs/colors/font_color_fg = Color( 0.94, 0.94, 0.94, 1 )
+TextEdit/colors/background_color = Color( 0, 0, 0, 0 )
+TextEdit/colors/bookmark_color = Color( 0.08, 0.49, 0.98, 1 )
+TextEdit/colors/brace_mismatch_color = Color( 1, 0.2, 0.2, 1 )
+TextEdit/colors/breakpoint_color = Color( 0.8, 0.8, 0.4, 0.2 )
+TextEdit/colors/caret_background_color = Color( 0, 0, 0, 1 )
+TextEdit/colors/caret_color = Color( 0.88, 0.88, 0.88, 1 )
+TextEdit/colors/code_folding_color = Color( 0.8, 0.8, 0.8, 0.8 )
+TextEdit/colors/completion_background_color = Color( 0.17, 0.16, 0.2, 1 )
+TextEdit/colors/completion_existing_color = Color( 0.87, 0.87, 0.87, 0.13 )
+TextEdit/colors/completion_font_color = Color( 0.67, 0.67, 0.67, 1 )
+TextEdit/colors/completion_scroll_color = Color( 1, 1, 1, 1 )
+TextEdit/colors/completion_selected_color = Color( 0.26, 0.26, 0.27, 1 )
+TextEdit/colors/current_line_color = Color( 0.25, 0.25, 0.26, 0.8 )
+TextEdit/colors/executing_line_color = Color( 0.2, 0.8, 0.2, 0.4 )
+TextEdit/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+TextEdit/colors/font_color_readonly = Color( 0.88, 0.88, 0.88, 0.5 )
+TextEdit/colors/font_color_selected = Color( 0, 0, 0, 1 )
+TextEdit/colors/function_color = Color( 0.4, 0.64, 0.81, 1 )
+TextEdit/colors/line_number_color = Color( 0.67, 0.67, 0.67, 0.4 )
+TextEdit/colors/mark_color = Color( 1, 0.4, 0.4, 0.4 )
+TextEdit/colors/member_variable_color = Color( 0.9, 0.31, 0.35, 1 )
+TextEdit/colors/number_color = Color( 0.92, 0.58, 0.2, 1 )
+TextEdit/colors/safe_line_number_color = Color( 0.67, 0.78, 0.67, 0.6 )
+TextEdit/colors/selection_color = Color( 0.49, 0.49, 0.49, 1 )
+TextEdit/colors/symbol_color = Color( 0.94, 0.94, 0.94, 1 )
+TextEdit/colors/word_highlighted_color = Color( 0.8, 0.9, 0.9, 0.15 )
+ToolButton/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+ToolButton/colors/font_color_disabled = Color( 0.9, 0.95, 1, 0.3 )
+ToolButton/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+ToolButton/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+ToolButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+TooltipLabel/colors/font_color = Color( 0, 0, 0, 1 )
+TooltipLabel/colors/font_color_shadow = Color( 0, 0, 0, 0.1 )
+Tree/colors/custom_button_font_highlight = Color( 0.94, 0.94, 0.94, 1 )
+Tree/colors/drop_position_color = Color( 1, 0.3, 0.2, 1 )
+Tree/colors/font_color = Color( 0.69, 0.69, 0.69, 1 )
+Tree/colors/font_color_selected = Color( 1, 1, 1, 1 )
+Tree/colors/guide_color = Color( 0, 0, 0, 0.1 )
+Tree/colors/relationship_line_color = Color( 0.27, 0.27, 0.27, 1 )
+Tree/colors/title_button_color = Color( 0.88, 0.88, 0.88, 1 )
+WindowDialog/colors/title_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxLine" id=2]
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 0
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+outline_size = 3
+outline_color = Color( 0.180392, 0.180392, 0.180392, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 5 )
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 2 )
+
+[node name="zhu" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+theme = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="zhu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="Panel" type="Panel" parent="zhu"]
+margin_left = 72.0
+margin_top = 56.0
+margin_right = 192.0
+margin_bottom = 328.0
+rect_pivot_offset = Vector2( 72, 80 )
+custom_styles/panel = SubResource( 2 )
+
+[node name="Label" type="Label" parent="zhu/Panel"]
+margin_right = 88.0
+margin_bottom = 24.0
+custom_fonts/font = ExtResource( 1 )
+text = "道号：小徐"
+
+[node name="Label2" type="Label" parent="zhu/Panel"]
+margin_top = 24.0
+margin_right = 88.0
+margin_bottom = 48.0
+rect_pivot_offset = Vector2( 64, 8 )
+custom_fonts/font = ExtResource( 1 )
+text = "灵根：小徐"
+
+[node name="Label3" type="Label" parent="zhu/Panel"]
+margin_top = 48.0
+margin_right = 88.0
+margin_bottom = 72.0
+rect_pivot_offset = Vector2( 64, 8 )
+custom_fonts/font = ExtResource( 1 )
+text = "灵根：小徐"
+
+[node name="Label4" type="Label" parent="zhu/Panel"]
+margin_top = 72.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_pivot_offset = Vector2( 64, 8 )
+custom_fonts/font = ExtResource( 1 )
+text = "灵根：小徐"
+
+[node name="ProgressBar" type="ProgressBar" parent="zhu/Panel"]
+margin_top = 96.0
+margin_right = 112.0
+margin_bottom = 128.0
+
+[node name="Label" type="Label" parent="zhu"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -72.0
+margin_top = 96.0
+margin_right = 104.0
+margin_bottom = 152.0
+custom_fonts/font = ExtResource( 1 )
+text = "打坐修炼中"
+align = 1
+valign = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="zhu"]
+margin_left = 392.0
+margin_top = 184.0
+margin_right = 656.0
+margin_bottom = 208.0
+
+[node name="Panel3" type="Panel" parent="zhu"]
+margin_left = 64.0
+margin_top = 400.0
+margin_right = 936.0
+margin_bottom = 552.0
+
+[node name="TextureRect2" type="TextureRect" parent="zhu/Panel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="Button" type="Button" parent="zhu/Panel3"]
+margin_right = 112.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "属性"
+
+[node name="Button2" type="Button" parent="zhu/Panel3"]
+margin_left = 128.0
+margin_right = 240.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "储物"
+
+[node name="Button3" type="Button" parent="zhu/Panel3"]
+margin_left = 256.0
+margin_right = 368.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "法器"
+
+[node name="Button4" type="Button" parent="zhu/Panel3"]
+margin_left = 384.0
+margin_right = 496.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "灵根"
+
+[node name="Button5" type="Button" parent="zhu/Panel3"]
+margin_left = 512.0
+margin_right = 624.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "功法"
+
+[node name="Button7" type="Button" parent="zhu/Panel3"]
+margin_left = 632.0
+margin_right = 744.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "突破"
+
+[node name="Button8" type="Button" parent="zhu/Panel3"]
+margin_left = 768.0
+margin_right = 880.0
+margin_bottom = 56.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "凡术"
+
+[node name="Button9" type="Button" parent="zhu/Panel3"]
+margin_top = 80.0
+margin_right = 112.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "灵脉"
+
+[node name="Button10" type="Button" parent="zhu/Panel3"]
+margin_left = 128.0
+margin_top = 80.0
+margin_right = 240.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "世界"
+
+[node name="Button11" type="Button" parent="zhu/Panel3"]
+margin_left = 256.0
+margin_top = 80.0
+margin_right = 368.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "宗门"
+
+[node name="Button12" type="Button" parent="zhu/Panel3"]
+margin_left = 384.0
+margin_top = 80.0
+margin_right = 496.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "关系"
+
+[node name="Button13" type="Button" parent="zhu/Panel3"]
+margin_left = 512.0
+margin_top = 80.0
+margin_right = 624.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "炼制"
+
+[node name="Button14" type="Button" parent="zhu/Panel3"]
+margin_left = 640.0
+margin_top = 80.0
+margin_right = 752.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "洞府"
+
+[node name="Button15" type="Button" parent="zhu/Panel3"]
+margin_left = 768.0
+margin_top = 80.0
+margin_right = 880.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 88, 32 )
+theme = ExtResource( 3 )
+text = "其他"
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 848.0
+margin_top = 24.0
+margin_right = 992.0
+margin_bottom = 88.0
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "save"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 696.0
+margin_top = 24.0
+margin_right = 840.0
+margin_bottom = 88.0
+theme = ExtResource( 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "玉帝视角"
+
+[node name="jiazai" type="Panel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="jdt" type="ProgressBar" parent="jiazai"]
+margin_left = 328.0
+margin_top = 416.0
+margin_right = 696.0
+margin_bottom = 456.0
+max_value = 1.0
+
+[node name="Label" type="Label" parent="jiazai"]
+margin_left = 408.0
+margin_top = 232.0
+margin_right = 600.0
+margin_bottom = 312.0
+custom_fonts/font = SubResource( 3 )
+text = "加载中..."
+align = 1
+valign = 1
+
+[node name="jztimer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="button_down" from="zhu/Panel3/Button" to="." method="on_but"]
+[connection signal="button_down" from="zhu/Panel3/Button2" to="." method="_on_bt2"]
+[connection signal="button_down" from="zhu/Panel3/Button7" to="." method="_on_Button7_button_down"]
+[connection signal="button_down" from="zhu/Panel3/Button10" to="." method="_on_Button10_button_down"]
+[connection signal="ready" from="Timer" to="." method="_on_Timer_ready"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_Button2_button_down"]
+[connection signal="timeout" from="jztimer" to="." method="_on_jztimer"]
